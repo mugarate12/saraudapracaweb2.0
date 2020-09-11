@@ -125,8 +125,8 @@ const Header: React.FC<HeaderProps> = ({ haveMenu }) => {
           height={10}
           width={40}
           handleDiameter={20}
-          onColor='#333'
-          offColor='#FFF'
+          onColor='#FFF'
+          offColor='#333'
           onHandleColor='#DA34B5'
           offHandleColor='#DA34B5'
         />
