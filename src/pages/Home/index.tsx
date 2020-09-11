@@ -2,8 +2,14 @@ import React from 'react'
 
 import * as Styled from './styles'
 
+import Header from './../../components/Header/index'
+
 export default function Home() {
   return (
-    <h1>Olá mundo!</h1>
+    <>
+    <Header />
+
+    <Styled.PageTitle>Olá mundo!</Styled.PageTitle>
+    </>
   )
 }
