@@ -39,8 +39,6 @@ export const LogoImg = styled.img.attrs(() => ({
 }))`
   width: 80px;
   height: 30px;
-
-  margin-left: 10px;
 `
 
 // side bar
@@ -151,6 +149,8 @@ export const SubItemTextOption = styled.p`
 
 // icons
 export const MenuIcon = styled(FaBars)`
+  margin-right: 10px;
+
   font-size: ${iconsSize};
 
   color: ${props => props.theme.colors.generalIcons};
