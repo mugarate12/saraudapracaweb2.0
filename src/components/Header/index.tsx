@@ -22,10 +22,17 @@ const Header: React.FC<HeaderProps> = ({ haveMenu }) => {
   const [scheduleOptions, setScheduleOptions] = useState<boolean>(false)
   const [adminOptions, setAdminOptions] = useState<boolean>(false)
 
+  function handleShowMenu() {
+    setEventOptions(false)
+    setScheduleOptions(false)
+    setAdminOptions(false)
+    setShowMenu(!showMenu)
+  }
+
   function renderMenuIcon() {
     if (haveMenu) {
       return (
-        <Styled.SidebarButton onClick={() => setShowMenu(!showMenu)}>
+        <Styled.SidebarButton onClick={() => handleShowMenu()}>
           <Styled.MenuIcon />
         </Styled.SidebarButton>
       )
@@ -37,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ haveMenu }) => {
       return (
         <Styled.SideBarOpenContainer>
           <Styled.sideBarCloseButtonContainer>
-            <Styled.SidebarButton onClick={() => setShowMenu(!showMenu)}>
+            <Styled.SidebarButton onClick={() => handleShowMenu()}>
               <Styled.CloseMenuIcon />
             </Styled.SidebarButton>
           </Styled.sideBarCloseButtonContainer>

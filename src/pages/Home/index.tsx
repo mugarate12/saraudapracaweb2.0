@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 
 import * as Styled from './styles'
 
@@ -9,6 +10,8 @@ import CheckBox from './../../components/Checkbox/index'
 import Button from './../../components/ForwardButton/index'
 
 export default function Home() {
+  const history = useHistory()
+
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
   const [checkBox, setCheckBox] = useState<boolean>(false)
@@ -18,7 +21,7 @@ export default function Home() {
   function handleButtonLogin() {
     setDisabledButton(true)
 
-    alert('ok')
+    history.push('/eventos/criar')
 
     setDisabledButton(false)
   }

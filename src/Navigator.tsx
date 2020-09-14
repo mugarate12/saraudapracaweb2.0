@@ -13,6 +13,7 @@ import DefaultTheme from './styles/themes/default'
 import DarkTheme from './styles/themes/dark'
 
 import Home from './pages/Home/index'
+import CreateEvent from './pages/CreateEvent/index'
 
 export const ThemeContext = React.createContext(() => {})
 
@@ -34,6 +35,7 @@ export default function Navigator() {
           <GlobalStyle />
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/eventos/criar' component={CreateEvent} />
           </Switch>
         </ThemeContext.Provider>
       </ThemeProvider>

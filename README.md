@@ -52,13 +52,14 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [X] Login
 - [X] Navigation Bar
 - [X] Dark Theme
-- [ ] Create Events
+- [X] Create Events
 - [ ] View Events
 - [ ] Create/Update Schedule
 - [ ] View Schedule
 - [ ] Send Schedule
 - [ ] Create Admin
 - [ ] Admin Config
+- [ ] Integrate with API
 
 ## Learn More
 
