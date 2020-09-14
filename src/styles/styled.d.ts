@@ -4,6 +4,8 @@ declare module 'styled-components' {
   export interface Themes {
     title: string;
 
+    iconSize: string;
+
     colors: {
       background: string;
       font: string;
@@ -12,6 +14,15 @@ declare module 'styled-components' {
       sideBarBackground: string;
       sideBarIcon: string;
       sideBarFontColor: string;
+
+      containerBackground: string;
+      containerFont: string;
+
+      inputBackground: string;
+      inputBorder: string;
+
+      buttonbackground: string;
+      buttonIcon: string;
     }
   }
 

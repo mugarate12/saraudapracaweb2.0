@@ -10,8 +10,6 @@ import {
   FaSignOutAlt
 } from 'react-icons/fa'
 
-const iconsSize = '24px'
-
 export const Container = styled.header`
   height: 60px;
   width: 100%;
@@ -151,13 +149,13 @@ export const SubItemTextOption = styled.p`
 export const MenuIcon = styled(FaBars)`
   margin-right: 10px;
 
-  font-size: ${iconsSize};
+  font-size: ${props => props.theme.iconSize};
 
   color: ${props => props.theme.colors.generalIcons};
 `
 
 export const CloseMenuIcon = styled(FaTimes)`
-  font-size: ${iconsSize};
+  font-size: ${props => props.theme.iconSize};
 
   color: ${props => props.theme.colors.sideBarIcon};
 `
@@ -166,7 +164,7 @@ export const CloseMenuIcon = styled(FaTimes)`
 export const ArrowDownIcon = styled(FaArrowDown)`
   margin-left: 15px;
 
-  font-size: ${iconsSize};
+  font-size: ${props => props.theme.iconSize};
 
   color: ${props => props.theme.colors.sideBarIcon};
 `
@@ -174,7 +172,7 @@ export const ArrowDownIcon = styled(FaArrowDown)`
 export const ArrowUpIcon = styled(FaArrowUp)`
   margin-left: 15px;
 
-  font-size: ${iconsSize};
+  font-size: ${props => props.theme.iconSize};
 
   color: ${props => props.theme.colors.sideBarIcon};
 `
@@ -182,7 +180,7 @@ export const ArrowUpIcon = styled(FaArrowUp)`
 export const EventIcon = styled(FaCalendar)`
   margin-left: 15px;
 
-  font-size: ${iconsSize};
+  font-size: ${props => props.theme.iconSize};
 
   color: ${props => props.theme.colors.sideBarIcon};
 `
@@ -190,7 +188,7 @@ export const EventIcon = styled(FaCalendar)`
 export const ScheduleIcon = styled(FaClock)`
   margin-left: 15px;
 
-  font-size: ${iconsSize};
+  font-size: ${props => props.theme.iconSize};
 
   color: ${props => props.theme.colors.sideBarIcon};
 `
@@ -198,7 +196,7 @@ export const ScheduleIcon = styled(FaClock)`
 export const AdminIcon = styled(FaUser)`
   margin-left: 15px;
 
-  font-size: ${iconsSize};
+  font-size: ${props => props.theme.iconSize};
 
   color: ${props => props.theme.colors.sideBarIcon};
 `
@@ -206,7 +204,7 @@ export const AdminIcon = styled(FaUser)`
 export const ExitIcon = styled(FaSignOutAlt)`
   margin-left: 15px;
 
-  font-size: ${iconsSize};
+  font-size: ${props => props.theme.iconSize};
 
   color: ${props => props.theme.colors.sideBarIcon};
 `
