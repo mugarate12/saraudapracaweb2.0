@@ -6,8 +6,6 @@ export const Input = styled.input.attrs({
   height: 25px;
   width: 100%;
 
-  margin-left: 5px;
-  margin-right: 5px;
   margin-bottom: 5px;
   
   padding-left: 5px;
