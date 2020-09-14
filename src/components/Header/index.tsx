@@ -51,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({ haveMenu }) => {
 
           <Styled.SideBarItemsContent>
             {renderSideBarOptions(eventOptions, setEventOptions, Styled.EventIcon, 'Eventos')}
-            {renderSideBarSubOptions(eventOptions, ['Criar', 'Ver'])}
+            {renderSideBarSubOptions(eventOptions, ['Criar', 'Ver'], ['/eventos/criar', '/'])}
 
             {renderSideBarOptions(scheduleOptions, setScheduleOptions, Styled.ScheduleIcon, 'Cronograma')}
             {renderSideBarSubOptions(scheduleOptions, ['Criar/Editar', 'Ver', 'Enviar'])}
