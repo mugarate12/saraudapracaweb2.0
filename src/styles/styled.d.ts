@@ -23,6 +23,8 @@ declare module 'styled-components' {
 
       buttonbackground: string;
       buttonIcon: string;
+
+      tableContentBorder: string;
     }
   }
 

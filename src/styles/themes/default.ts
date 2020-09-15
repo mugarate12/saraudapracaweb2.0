@@ -19,6 +19,8 @@ export default {
     inputBorder: 'transparent',
 
     buttonbackground: '#FFE6FF',
-    buttonIcon: '#333'
+    buttonIcon: '#333',
+
+    tableContentBorder: '#F2EEEE'
   }
 }
