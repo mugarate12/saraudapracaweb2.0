@@ -12,12 +12,16 @@ export const Container = styled.div`
 
   background-color: ${props => props.theme.colors.containerBackground};
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     width: 70%;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
     width: 80%;
+  }
+
+  @media (max-width: 400px) {
+    width: 90%;
   }
 
   @media (max-width: 300px) {

@@ -7,16 +7,19 @@ import TableHeader from './../../components/TableHeader/index'
 import CheckBox from './../../components/Checkbox/index'
 import Input from './../../components/Input/index'
 
-export default function ViewEventsPainel() {
+interface ViewEventsPainelInterface {
+  events: number[];
+  catchEventNumber: React.Dispatch<React.SetStateAction<number | undefined>>;
+}
+
+const ViewEventsPainel: React.FC<ViewEventsPainelInterface> = ({ events, catchEventNumber }) => {
   const [checkBox, setCheckBox] = useState<boolean>(false)
   const [eventName, setEventName] = useState<string>('')
 
   function renderEvents() {
-    const array = [1, 2, 3, 4, 5]
-
-    return array.map((event, index) => {
+    return events.map((event, index) => {
       return (
-        <Styled.GridContentButton key={index} >
+        <Styled.GridContentButton key={index} onClick={() => catchEventNumber(index)} >
           <Styled.GridBody key={index}>
             <Styled.GridContent>Sarau da praça</Styled.GridContent>
             <Styled.GridContent>20/10/2019</Styled.GridContent>
@@ -62,3 +65,5 @@ export default function ViewEventsPainel() {
     </TableContainer>
   )
 }
+
+export default ViewEventsPainel

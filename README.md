@@ -53,7 +53,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [X] Navigation Bar
 - [X] Dark Theme
 - [X] Create Events
-- [ ] View Events
+- [X] View Events
 - [ ] Create/Update Schedule
 - [ ] View Schedule
 - [ ] Send Schedule
