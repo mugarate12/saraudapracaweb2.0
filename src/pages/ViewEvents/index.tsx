@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import * as Styled from './styles'
 
-import Header from './../../components/Header/index'
+import Header from './../../containers/Header/index'
 import ViewEventsPainel from './../../containers/ViewEventsPainel/index'
 import ViewParticipantsPainel from './../../containers/ViewParticipants/index'
 

@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 
 import * as Styled from './styles'
 
-import Header from './../../components/Header/index'
+import Header from './../../containers/Header/index'
 import CreateFormContainer from './../../components/CreateFormContainer/index'
 import Input from './../../components/Input/index'
 import CheckBox from './../../components/Checkbox/index'

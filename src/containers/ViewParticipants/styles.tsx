@@ -1,4 +1,8 @@
 import styled from 'styled-components'
+import {
+  FaArrowLeft,
+  FaArrowRight
+} from 'react-icons/fa'
 
 export const GridContainer = styled.div`
   width: 90%;
@@ -41,4 +45,46 @@ export const GridContent = styled.p`
   border-style: solid;
   border-width: 2px;
   border-color: ${props => props.theme.colors.tableContentBorder};
+`
+
+// pages button
+export const GenericButton = styled.button`
+  border: 0 none;
+  background-color: transparent;
+
+  :focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+
+  :active {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
+  }
+`
+
+export const PagesIconsContainer = styled.div`
+  height: 30px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+export const ArrowLeftIcon = styled(FaArrowLeft)`
+  margin-left: 15px;
+
+  font-size: ${props => props.theme.iconSize};
+
+  color: ${props => props.theme.colors.sideBarIcon};
+`
+
+export const ArrowRightIcon = styled(FaArrowRight)`
+  margin-right: 15px;
+
+  font-size: ${props => props.theme.iconSize};
+
+  color: ${props => props.theme.colors.sideBarIcon};
 `

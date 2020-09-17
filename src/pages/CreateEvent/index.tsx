@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import * as Styled from './styles'
 
-import Header from './../../components/Header/index'
+import Header from './../../containers/Header/index'
 import CreateFormContainer from './../../components/CreateFormContainer/index'
 import Input from './../../components/Input/index'
 import Button from './../../components/ForwardButton/index'

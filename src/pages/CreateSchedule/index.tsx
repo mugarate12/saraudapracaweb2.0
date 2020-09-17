@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Header from './../../components/Header/index'
+import Header from './../../containers/Header/index'
 
 export default function CreateSchedule() {
   return (

@@ -6,7 +6,7 @@ import { ThemeContext } from 'styled-components'
 import * as Styled from './styles'
 
 import Logo from './../../assets/logo.svg'
-import SideBar from './../SideBar/index'
+import SideBar from './../../components/SideBar/index'
 
 interface HeaderProps {
   haveMenu?: boolean;
