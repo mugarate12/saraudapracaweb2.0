@@ -19,7 +19,7 @@ const ViewEventsPainel: React.FC<ViewEventsPainelInterface> = ({ events, catchEv
   function renderEvents() {
     return events.map((event, index) => {
       return (
-        <Styled.GridContentButton key={index} onClick={() => catchEventNumber(index)} >
+        <Styled.GridContentButton key={index} onClick={() => catchEventNumber(index + 1)} >
           <Styled.GridBody key={index}>
             <Styled.GridContent>Sarau da praça</Styled.GridContent>
             <Styled.GridContent>20/10/2019</Styled.GridContent>

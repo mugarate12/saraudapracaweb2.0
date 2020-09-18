@@ -14,6 +14,7 @@ declare module 'styled-components' {
       sideBarBackground: string;
       sideBarIcon: string;
       sideBarFontColor: string;
+      sideBarBoxShadow: string;
 
       containerBackground: string;
       containerFont: string;

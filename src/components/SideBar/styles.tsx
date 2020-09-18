@@ -46,6 +46,7 @@ export const SideBarOpenContainer = styled.nav`
   height: 100vh;
 
   background-color: ${props => props.theme.colors.sideBarBackground};
+  box-shadow: 2px 0px 8px 1px ${props => props.theme.colors.sideBarBoxShadow};
 
   @media (max-width: 800px) {
     width: 40%;

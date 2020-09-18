@@ -11,6 +11,7 @@ export default {
     sideBarBackground: '#3A3A3A',
     sideBarIcon: '#FFF',
     sideBarFontColor: '#FFF',
+    sideBarBoxShadow: '#333',
 
     containerBackground: '#333',
     containerFont: '#FFF',

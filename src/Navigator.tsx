@@ -17,6 +17,7 @@ import CreateEvent from './pages/CreateEvent/index'
 import ViewEvents from './pages/ViewEvents/index'
 import CreateSchedule from './pages/CreateSchedule/index'
 import ViewSchedule from './pages/ViewSchedule/index'
+import SendSchedule from './pages/SendSchedule/index'
 
 export const ThemeContext = React.createContext(() => {})
 
@@ -42,6 +43,7 @@ export default function Navigator() {
             <Route path='/eventos/ver' component={ViewEvents} />
             <Route path='/cronograma/criar' component={CreateSchedule} />
             <Route path='/cronograma/ver' component={ViewSchedule} />
+            <Route path='/cronograma/enviar' component={SendSchedule} />
           </Switch>
         </ThemeContext.Provider>
       </ThemeProvider>
