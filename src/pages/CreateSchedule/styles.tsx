@@ -63,6 +63,10 @@ export const ParticipantContentContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
   border-width: 1px;
   border-style: solid;
   border-color: ${props => props.theme.colors.tableContentBorder};

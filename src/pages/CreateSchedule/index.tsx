@@ -34,7 +34,7 @@ export default function CreateSchedule() {
 
       <Styled.Container>
         <ContainerPainel>
-          <ContainerHeader type='participants' />
+          <ContainerHeader type='schedule' />
 
           <Styled.ContentContainer>
             <Styled.ContentGridTitleContainer>

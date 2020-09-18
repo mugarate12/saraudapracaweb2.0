@@ -54,8 +54,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 - [X] Dark Theme
 - [X] Create Events
 - [X] View Events
-- [ ] Create/Update Schedule
-- [ ] View Schedule
+- [X] Create/Update Schedule
+- [X] View Schedule
 - [ ] Send Schedule
 - [ ] Create Admin
 - [ ] Admin Config

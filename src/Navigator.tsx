@@ -15,7 +15,8 @@ import DarkTheme from './styles/themes/dark'
 import Home from './pages/Home/index'
 import CreateEvent from './pages/CreateEvent/index'
 import ViewEvents from './pages/ViewEvents/index'
-import CreateView from './pages/CreateSchedule/index'
+import CreateSchedule from './pages/CreateSchedule/index'
+import ViewSchedule from './pages/ViewSchedule/index'
 
 export const ThemeContext = React.createContext(() => {})
 
@@ -39,7 +40,8 @@ export default function Navigator() {
             <Route exact path='/' component={Home} />
             <Route path='/eventos/criar' component={CreateEvent} />
             <Route path='/eventos/ver' component={ViewEvents} />
-            <Route path='/cronograma/criar' component={CreateView} />
+            <Route path='/cronograma/criar' component={CreateSchedule} />
+            <Route path='/cronograma/ver' component={ViewSchedule} />
           </Switch>
         </ThemeContext.Provider>
       </ThemeProvider>

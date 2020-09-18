@@ -77,7 +77,7 @@ const SideBar: React.FC<SideBarInterface> = ({ showMenu, setShowMenu }) => {
           {renderSideBarSubOptions(eventOptions, ['Criar', 'Ver'], ['/eventos/criar', '/eventos/ver'])}
 
           {renderSideBarOptions(scheduleOptions, setScheduleOptions, Styled.ScheduleIcon, 'Cronograma')}
-          {renderSideBarSubOptions(scheduleOptions, ['Criar/Editar', 'Ver', 'Enviar'], ['/cronograma/criar', '/', '/'])}
+          {renderSideBarSubOptions(scheduleOptions, ['Criar/Editar', 'Ver', 'Enviar'], ['/cronograma/criar', '/cronograma/ver', '/'])}
 
           {renderSideBarOptions(adminOptions, setAdminOptions, Styled.AdminIcon, 'Administrador')}
           {renderSideBarSubOptions(adminOptions, ['Criar', 'Configurações'])}
