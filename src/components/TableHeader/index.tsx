@@ -3,7 +3,7 @@ import React from 'react'
 import * as Styled from './styles'
 
 interface TableHeaderInterface {
-  type?: 'events' | 'participants' | 'schedule';
+  type?: 'events' | 'participants' | 'schedule' | 'admin';
 }
 
 const TableHeader: React.FC<TableHeaderInterface> = ({ type }) => {
@@ -15,6 +15,8 @@ const TableHeader: React.FC<TableHeaderInterface> = ({ type }) => {
         return <Styled.ParticipantsIcon />
       case 'schedule':
         return <Styled.ScheduleIcon />
+      case 'admin':
+        return <Styled.AdminIcon />
       default:
         return
     }

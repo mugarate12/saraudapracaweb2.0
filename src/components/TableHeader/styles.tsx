@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { FaCalendar, FaClock, FaUsers } from 'react-icons/fa'
+import { FaCalendar, FaClock, FaUsers, FaUser } from 'react-icons/fa'
 
 export const Container = styled.div`
   height: 30px;
@@ -53,6 +53,14 @@ export const ScheduleIcon = styled(FaClock)`
 `
 
 export const ParticipantsIcon = styled(FaUsers)`
+  margin-left: 15px;
+
+  font-size: ${props => props.theme.iconSize};
+
+  color: ${props => props.theme.colors.sideBarIcon};
+`
+
+export const AdminIcon = styled(FaUser)`
   margin-left: 15px;
 
   font-size: ${props => props.theme.iconSize};

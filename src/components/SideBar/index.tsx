@@ -80,7 +80,7 @@ const SideBar: React.FC<SideBarInterface> = ({ showMenu, setShowMenu }) => {
           {renderSideBarSubOptions(scheduleOptions, ['Criar/Editar', 'Ver', 'Enviar'], ['/cronograma/criar', '/cronograma/ver', '/cronograma/enviar'])}
 
           {renderSideBarOptions(adminOptions, setAdminOptions, Styled.AdminIcon, 'Administrador')}
-          {renderSideBarSubOptions(adminOptions, ['Criar', 'Configurações'], ['/admin/criar', '/'])}
+          {renderSideBarSubOptions(adminOptions, ['Criar', 'Configurações'], ['/admin/criar', '/admin/config'])}
 
           <Styled.SidebarButton onClick={() => history.push('/')}>
             <Styled.SideBarItemContent>

@@ -19,6 +19,7 @@ import CreateSchedule from './pages/CreateSchedule/index'
 import ViewSchedule from './pages/ViewSchedule/index'
 import SendSchedule from './pages/SendSchedule/index'
 import CreateAdmin from './pages/CreateAdmin/index'
+import AdminConfig from './pages/AdminConfig/index'
 
 export const ThemeContext = React.createContext(() => {})
 
@@ -46,6 +47,7 @@ export default function Navigator() {
             <Route path='/cronograma/ver' component={ViewSchedule} />
             <Route path='/cronograma/enviar' component={SendSchedule} />
             <Route path='/admin/criar' component={CreateAdmin} />
+            <Route path='/admin/config' component={AdminConfig} />
           </Switch>
         </ThemeContext.Provider>
       </ThemeProvider>
