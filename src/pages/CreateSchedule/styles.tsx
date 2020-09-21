@@ -51,6 +51,7 @@ export const ContentGridContainer = styled.div`
 
 export const ContentBodyContainer = styled.div`
   height: 250px;
+  width: 80%;
 `
 
 export const GridTitle = styled.h3`
@@ -147,9 +148,16 @@ export const ConfirmButton = styled.button`
   justify-content: center;
   align-items: center;
 
+  cursor: pointer;
+
   border: 0 none;
   border-radius: 10px;
   background-color: ${props => props.theme.colors.buttonbackground};
+
+  :hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
 
   :focus {
     box-shadow: 0 0 0 0;

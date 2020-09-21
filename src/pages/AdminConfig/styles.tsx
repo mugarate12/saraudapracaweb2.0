@@ -51,9 +51,20 @@ export const Button = styled.button`
 
   background-color:${props => props.theme.colors.buttonbackground};
 
+  :hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
+
   :focus {
     outline: 0;
     box-shadow: 0 0 0 0;
+  }
+
+  :active {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #333;
   }
 `
 

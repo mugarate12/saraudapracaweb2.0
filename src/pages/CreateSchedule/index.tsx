@@ -47,7 +47,6 @@ export default function CreateSchedule() {
           </Styled.ContentContainer>
           
           <Styled.ContentBodyContainer>
-
             {renderParticipants()}
           </Styled.ContentBodyContainer>
 
