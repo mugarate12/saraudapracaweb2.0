@@ -67,8 +67,9 @@ export const GenericButton = styled.button`
 // grid content
 export const GridContainer = styled.div`
   width: 80%;
+  height: 300px;
   
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   background-color: transparent;
 `

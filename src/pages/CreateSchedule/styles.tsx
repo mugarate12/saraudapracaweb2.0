@@ -6,6 +6,7 @@ import {
 
 export const Container = styled.div`
   width: 100%;
+  min-height: 500px;
   height: 90vh;
 
   display: flex;
@@ -46,6 +47,10 @@ export const ContentGridContainer = styled.div`
   margin-bottom: 2px;
 
   align-content: center;
+`
+
+export const ContentBodyContainer = styled.div`
+  height: 250px;
 `
 
 export const GridTitle = styled.h3`
@@ -99,6 +104,8 @@ export const GenericButton = styled.button`
 export const PagesIconsContainer = styled.div`
   height: 30px;
   width: 100%;
+
+  margin-bottom: 10px;
 
   display: flex;
   flex-direction: row;

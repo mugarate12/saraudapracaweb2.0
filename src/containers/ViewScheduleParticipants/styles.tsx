@@ -6,8 +6,13 @@ import {
 
 export const ContentContainer = styled.div`
   width: 80%;
+  height: 300px;
 
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+`
+
+export const ContentBodyContainer = styled.div`
+  height: 300px;
 `
 
 export const GridTitleContainer = styled.div`

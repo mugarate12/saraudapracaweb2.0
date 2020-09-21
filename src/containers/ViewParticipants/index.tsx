@@ -39,16 +39,17 @@ const ViewParticipants: React.FC<ViewParticipantsInterface> = ({ participants })
 
         {renderParticipants()}
 
-        <Styled.PagesIconsContainer>
-          <Styled.GenericButton>
-            <Styled.ArrowLeftIcon />
-          </Styled.GenericButton>
-
-          <Styled.GenericButton>
-            <Styled.ArrowRightIcon />
-          </Styled.GenericButton>
-        </Styled.PagesIconsContainer>
       </Styled.GridContainer>
+      
+      <Styled.PagesIconsContainer>
+        <Styled.GenericButton>
+          <Styled.ArrowLeftIcon />
+        </Styled.GenericButton>
+
+        <Styled.GenericButton>
+          <Styled.ArrowRightIcon />
+        </Styled.GenericButton>
+      </Styled.PagesIconsContainer>
     </TableContainer>
   )
 }

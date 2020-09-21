@@ -43,9 +43,13 @@ export default function CreateSchedule() {
               <Styled.GridTitle>Hora</Styled.GridTitle>
             </Styled.ContentGridTitleContainer>
 
-            {renderParticipants()}
 
           </Styled.ContentContainer>
+          
+          <Styled.ContentBodyContainer>
+
+            {renderParticipants()}
+          </Styled.ContentBodyContainer>
 
           <Styled.PagesIconsContainer>
             <Styled.GenericButton>

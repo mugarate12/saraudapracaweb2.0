@@ -6,8 +6,9 @@ import {
 
 export const GridContainer = styled.div`
   width: 90%;
+  height: 300px;
   
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   background-color: transparent;
 `
