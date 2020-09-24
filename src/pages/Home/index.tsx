@@ -9,6 +9,8 @@ import Input from './../../components/Input/index'
 import CheckBox from './../../components/Checkbox/index'
 import Button from './../../components/ForwardButton/index'
 
+import api from './../../config/axios'
+
 export default function Home() {
   const history = useHistory()
 
@@ -18,12 +20,27 @@ export default function Home() {
   
   const [disabledButton, setDisabledButton] = useState<boolean>(false)
 
-  function handleButtonLogin() {
+  async function handleButtonLogin() {
     setDisabledButton(true)
+    await api.post('/auth/admin', {
+      email: email,
+      password: password
+    })
+      .then(response => {
+        const token = response.data.token
 
-    history.push('/eventos/criar')
+        if (checkBox) {
+          localStorage.setItem('token', token)
+        } else {
+          sessionStorage.setItem('token', token)
+        }
 
-    setDisabledButton(false)
+        history.push('/eventos/criar')
+      })
+      .catch(error => {
+        alert('Informações incorretas, por favor, verifique os dados')
+        setDisabledButton(false)
+      })
   }
 
   return (

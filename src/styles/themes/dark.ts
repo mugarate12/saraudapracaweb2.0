@@ -1,7 +1,7 @@
 export default {
   title: 'dark',
   
-  iconSize: '24px',
+  iconSize: '16px',
 
   colors: {
     background: '#333',

@@ -7,12 +7,16 @@ import CreateFormContainer from './../../components/CreateFormContainer/index'
 import Input from './../../components/Input/index'
 import Button from './../../components/ForwardButton/index'
 
+import IsLogged from './../../utils/islogged'
+
 export default function CreateEvent() {
   const [eventName, setEventName] = useState<string>('')
   const [eventDate, setEventDate] = useState<string>('')
   const [eventHour, setEventHour] = useState<string>('')
 
   const [disabledButton, setDisabledButton] = useState<boolean>(false)
+
+  IsLogged()
 
   function handleButton() {
     setDisabledButton(true)
