@@ -5,8 +5,10 @@ import * as Styled from './styles'
 import Header from './../../containers/Header/index'
 import ViewEventsPainel from './../../containers/ViewEventsPainel/index'
 
+import { EventsInterface } from './../../interfaces/events'
+
 export default function SendSchedule() {
-  const [events] = useState<Array<number>>([1, 2, 3, 4, 5])
+  const [events] = useState<Array<EventsInterface>>([])
   const [eventSelectedID, setEventSelectedID] = useState<number>()
 
   useEffect(() => {

@@ -7,8 +7,10 @@ import TableHeader from './../../components/TableHeader/index'
 import CheckBox from './../../components/Checkbox/index'
 import Input from './../../components/Input/index'
 
+import { EventsInterface } from './../../interfaces/events'
+
 interface ViewEventsPainelInterface {
-  events: number[];
+  events: Array<EventsInterface>;
   catchEventNumber: React.Dispatch<React.SetStateAction<number | undefined>>;
 }
 

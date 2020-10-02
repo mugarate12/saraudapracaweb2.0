@@ -6,8 +6,10 @@ import Header from './../../containers/Header/index'
 import ViewEventsPainel from './../../containers/ViewEventsPainel/index'
 import ViewScheduleParticipants from './../../containers/ViewScheduleParticipants/index'
 
+import { EventsInterface } from './../../interfaces/events'
+
 export default function ViewSchedule() {
-  const [events] = useState<Array<number>>([1, 2, 3, 4, 5])
+  const [events] = useState<Array<EventsInterface>>([])
   const [eventSelectedID, setEventSelectedID] = useState<number>()
   const [participants] = useState<Array<number>>([1, 2, 3, 4, 5])
 
